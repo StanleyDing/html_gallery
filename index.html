@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Gallery</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="jquery.js"></script>
+        <script src="windowDOM.js"></script>
+        <script src="functions.js"></script>
+        
+        <script type="text/javascript">
+            
+        </script>
+        <script>
+
+        </script>
+    </head>	
+	
+    <body>
+        <div class="top">
+            <div id="top_bar">Gallery</div>
+        </div>
+        <div class="slideshow">
+            <div class="display">
+                <img id="photo" onclick="playPhoto()">
+                <img id="loading" src="loader.gif">
+                <img id="play" src="play.png">
+                <img id="pause" src="pause.png">
+                <div id="prevbutton"><img src="prevbutton.png" onclick="changePhoto(-1)"></div>
+                <div id="nextbutton"><img src="nextbutton.png" onclick="changePhoto(1)"></div>
+            </div>
+            <div class="cover_flow">
+                <img  id="cover_flow_0" src="thumb18.jpg" onclick="changePhoto(this)">
+                <img  id="cover_flow_1" src="thumb19.jpg" onclick="changePhoto(this)">
+                <img  id="cover_flow_2" src="thumb0.jpg">
+                <img  id="cover_flow_3" src="thumb1.jpg" onclick="changePhoto(this)">
+                <img  id="cover_flow_4" src="thumb2.jpg" onclick="changePhoto(this)">
+            </div>        
+        </div>
+        <div class="page" id="thumbnail"></div>
+        <div class="bottom">
+            <div id="bottom_bar" onclick="changePhoto()">Slide Show</div>
+        </div>
+
+        </body>
+</html>
